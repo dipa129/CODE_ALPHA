@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="playlist.svg" alt="Playlist Icon" id="playlist-img" aria-label="Open Playlist">
+        <h2>Feel the Music</h2>
+        <img src="music.svg" alt="Music Icon" id="music-img" aria-label="Music Icon">
+    </header>
+    <main>
+        <div class="left">
+            <div class="song-image">
+                <!-- Optionally add an img tag inside for dynamic content -->
+            </div>
+            <div class="volume-div">
+                <div class="volume-img">
+                    <img src="volume.svg" alt="Volume Icon" id="vol-svg" aria-label="Volume Control">
+                </div>
+                <input type="range" id="volume-range" onchange="volume()" aria-label="Volume Control">
+            </div>
+        </div>
+        <div class="right">
+            <div class="details">
+                <h3 id="song-name">Tu Ruha Hai</h3>
+                <h5 id="song-singer">Sonu Nigam & Neeti Mohan</h5>
+            </div>
+            <input type="range" id="song-duration" onchange="duration()" aria-label="Song Duration">
+            <div class="controls">
+                <div class="prev-img">
+                    <img src="prev.svg" alt="Previous Song" id="prev-img" onclick="previousSong()" aria-label="Previous Song">
+                </div>
+                <div class="play-pause">
+                    <img src="play.svg" alt="Play/Pause" id="play-pause" onclick="playPause()" aria-label="Play or Pause Song">
+                </div>
+                <div class="next-img">
+                    <img src="next.svg" alt="Next Song" id="next-img" onclick="nextSong()" aria-label="Next Song">
+                </div>
+            </div>
+        </div>
+        <div class="playlist">
+            <div class="playlist-song">
+                <img src="image1.jpg" alt="Tu Ruha Hai Album Cover">
+                <div class="song-details">
+                    <h2>Tu Ruha Hai</h2>
+                    <h5>Sonu Nigam & Neeti Mohan</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="image2.jpg" alt="Ye Tune Kya Kiya Album Cover">
+                <div class="song-details">
+                    <h2>Ye Tune Kya Kiya</h2>
+                    <h5>Javed Bashir, Pritam Chakraborty, and Rajat Arora</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="image3.jpg" alt="Ureche Mon Album Cover">
+                <div class="song-details">
+                    <h2>Ureche Mon</h2>
+                    <h5>Arijit Singh</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="image4.jpg" alt="Kasturi Album Cover">
+                <div class="song-details">
+                    <h2>Kasturi</h2>
+                    <h5>Arijit Singh</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="image5.jpg" alt="Naina Da Kya Kasoor Album Cover">
+                <div class="song-details">
+                    <h2>Naina Da Kya Kasoor</h2>
+                    <h5>Amit Trivedi</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="image6.jpg" alt="Dube Dube Album Cover">
+                <div class="song-details">
+                    <h2>Dube Dube</h2>
+                    <h5>Tanjib Sarowar</h5>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
